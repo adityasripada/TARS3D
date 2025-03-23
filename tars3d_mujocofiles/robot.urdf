@@ -1,0 +1,2941 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/a64fb0fa5d8889a75972d3a2/w/d78c72d4ae1e509038d50c03/e/e5909fb36b7c024fca2a2aa0 -->
+<robot name="TARS3D">
+  <!-- Link shell_motor -->
+  <link name="shell_motor">
+    <inertial>
+      <origin xyz="-0.0825449 -0.0405795 -0.00572721" rpy="0 0 0"/>
+      <mass value="0.14763"/>
+      <inertia ixx="0.000576666" ixy="2.49762e-07" ixz="-2.65202e-06" iyy="0.000538294" iyz="-3.63115e-06" izz="7.26091e-05"/>
+    </inertial>
+    <!-- Part mgn7c_1_bearing -->
+    <visual>
+      <origin xyz="-0.0798992 -0.0606478 0.0889802" rpy="3.13427 -1.6994e-14 5.85358e-12"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0798992 -0.0606478 0.0889802" rpy="3.13427 -1.6994e-14 5.85358e-12"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_2 -->
+    <visual>
+      <origin xyz="-0.0798992 -0.0186489 0.0886727" rpy="-0.00732023 -6.72012e-15 5.85328e-12"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0798992 -0.0186489 0.0886727" rpy="-0.00732023 -6.72012e-15 5.85328e-12"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_3 -->
+    <visual>
+      <origin xyz="-0.0798992 -0.0199372 -0.0873226" rpy="-0.00732023 -1.11261e-14 5.85332e-12"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0798992 -0.0199372 -0.0873226" rpy="-0.00732023 -1.11261e-14 5.85332e-12"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_4 -->
+    <visual>
+      <origin xyz="-0.0798992 -0.0619361 -0.0870151" rpy="3.13427 -1.25142e-14 5.85333e-12"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0798992 -0.0619361 -0.0870151" rpy="3.13427 -1.25142e-14 5.85333e-12"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spacer_ring -->
+    <visual>
+      <origin xyz="-0.0508992 -0.0402925 0.000828808" rpy="-1.5708 0.00732023 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/spacer_ring.stl"/>
+      </geometry>
+      <material name="spacer_ring_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0508992 -0.0402925 0.000828808" rpy="-1.5708 0.00732023 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/spacer_ring.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shell -->
+    <visual>
+      <origin xyz="-0.0798992 -0.0410245 -0.0991685" rpy="-0.00732023 -1.25686e-14 5.85381e-12"/>
+      <geometry>
+        <mesh filename="package://assets/shell.stl"/>
+      </geometry>
+      <material name="shell_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0798992 -0.0410245 -0.0991685" rpy="-0.00732023 -1.25686e-14 5.85381e-12"/>
+      <geometry>
+        <mesh filename="package://assets/shell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_ref -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_ref_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_3 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_3.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_3_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fhs_m2_5x06_nylok_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok_1.stl"/>
+      </geometry>
+      <material name="fhs_m2_5x06_nylok_1_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fhs_m2_5x06_nylok -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok.stl"/>
+      </geometry>
+      <material name="fhs_m2_5x06_nylok_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ehr_3_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3_1.stl"/>
+      </geometry>
+      <material name="ehr_3_1_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gear -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0635676 -0.0230015" rpy="0.00732023 -3.05057e-13 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+      <material name="gear_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0635676 -0.0230015" rpy="0.00732023 -3.05057e-13 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part s3b_eh_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh_1.stl"/>
+      </geometry>
+      <material name="s3b_eh_1_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_2 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_2.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part s3b_eh -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh.stl"/>
+      </geometry>
+      <material name="s3b_eh_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gear_2 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0173688 -0.0233396" rpy="-0.00732023 3.30702e-13 5.85069e-12"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+      <material name="gear_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0173688 -0.0233396" rpy="-0.00732023 3.30702e-13 5.85069e-12"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_5 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_5.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_5_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_2 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_2.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_cap_ref_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_cap_ref_1_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_ref_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_ref_1_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_screw_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_screw_1_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_4 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_4.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_1.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_cap_ref -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_cap_ref_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_ref -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_ref.stl"/>
+      </geometry>
+      <material name="dc14_a01_ref_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_horn_ref_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_horn_ref_1_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_1_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_3 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_3.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_3_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_screw -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_screw_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_7 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_7.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_7_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_7.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_6 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_6.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_6_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_horn_ref -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_horn_ref_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ehr_3 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3.stl"/>
+      </geometry>
+      <material name="ehr_3_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_1_1 -->
+    <visual>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_1_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0848992 -0.0403803 -0.0111709" rpy="1.5708 -0.00732023 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link shell_motor_2 -->
+  <link name="shell_motor_2">
+    <inertial>
+      <origin xyz="-0.000239027 0.00655795 -0.0228542" rpy="0 0 0"/>
+      <mass value="0.14763"/>
+      <inertia ixx="0.000538322" ixy="2.21958e-07" ixz="-2.69169e-07" iyy="7.25809e-05" iyz="-2.65012e-06" izz="0.000576666"/>
+    </inertial>
+    <!-- Part mgn7c_1_bearing_5 -->
+    <visual>
+      <origin xyz="-0.021 -0.088 -0.0255" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_5_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.021 -0.088 -0.0255" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_6 -->
+    <visual>
+      <origin xyz="0.021 -0.088 -0.0255" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_6_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.021 -0.088 -0.0255" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_7 -->
+    <visual>
+      <origin xyz="0.021 0.088 -0.0255" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_7_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.021 0.088 -0.0255" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_8 -->
+    <visual>
+      <origin xyz="-0.021 0.088 -0.0255" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_8_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.021 0.088 -0.0255" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spacer_ring_2 -->
+    <visual>
+      <origin xyz="7.63278e-17 -2.52511e-16 -0.0545" rpy="-4.64622e-15 -1.31312e-15 1.41882e-18"/>
+      <geometry>
+        <mesh filename="package://assets/spacer_ring.stl"/>
+      </geometry>
+      <material name="spacer_ring_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="7.63278e-17 -2.52511e-16 -0.0545" rpy="-4.64622e-15 -1.31312e-15 1.41882e-18"/>
+      <geometry>
+        <mesh filename="package://assets/spacer_ring.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shell_2 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0.1 -0.0255" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shell.stl"/>
+      </geometry>
+      <material name="shell_2_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0.1 -0.0255" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_ref_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_ref_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_3_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_3.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_3_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fhs_m2_5x06_nylok_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok_1.stl"/>
+      </geometry>
+      <material name="fhs_m2_5x06_nylok_1_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fhs_m2_5x06_nylok_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok.stl"/>
+      </geometry>
+      <material name="fhs_m2_5x06_nylok_2_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ehr_3_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3_1.stl"/>
+      </geometry>
+      <material name="ehr_3_1_2_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gear_3 -->
+    <visual>
+      <origin xyz="-0.0231 0.024 -0.0205" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+      <material name="gear_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0231 0.024 -0.0205" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part s3b_eh_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh_1.stl"/>
+      </geometry>
+      <material name="s3b_eh_1_2_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_2_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_2.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_2_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part s3b_eh_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh.stl"/>
+      </geometry>
+      <material name="s3b_eh_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gear_4 -->
+    <visual>
+      <origin xyz="0.0231 0.024 -0.0205" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+      <material name="gear_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0231 0.024 -0.0205" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_5_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_5.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_5_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_2_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_2.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_2_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_cap_ref_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_cap_ref_1_2_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_ref_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_ref_1_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_screw_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_screw_1_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_1_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_4_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_4.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_4_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_1.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_1_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_cap_ref_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_cap_ref_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_ref_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_ref.stl"/>
+      </geometry>
+      <material name="dc14_a01_ref_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_horn_ref_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_horn_ref_1_2_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_1_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_3_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_3.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_3_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_screw_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_screw_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_7_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_7.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_7_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_7.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_6_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_6.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_6_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_horn_ref_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_horn_ref_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ehr_3_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3.stl"/>
+      </geometry>
+      <material name="ehr_3_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_1_1_2 -->
+    <visual>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_1_1_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.85723e-17 0.012 -0.0205" rpy="4.64622e-15 1.36908e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link shell_motor_3 -->
+  <link name="shell_motor_3">
+    <inertial>
+      <origin xyz="-0.000239027 0.00655795 -0.0218542" rpy="0 0 0"/>
+      <mass value="0.14763"/>
+      <inertia ixx="0.000538322" ixy="2.21958e-07" ixz="-2.69169e-07" iyy="7.25809e-05" iyz="-2.65012e-06" izz="0.000576666"/>
+    </inertial>
+    <!-- Part mgn7c_1_bearing_9 -->
+    <visual>
+      <origin xyz="-0.021 -0.088 -0.0245" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_9_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.021 -0.088 -0.0245" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_10 -->
+    <visual>
+      <origin xyz="0.021 -0.088 -0.0245" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_10_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.021 -0.088 -0.0245" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_11 -->
+    <visual>
+      <origin xyz="0.021 0.088 -0.0245" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_11_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.021 0.088 -0.0245" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_12 -->
+    <visual>
+      <origin xyz="-0.021 0.088 -0.0245" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_12_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.021 0.088 -0.0245" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spacer_ring_3 -->
+    <visual>
+      <origin xyz="6.93889e-18 5.85469e-18 -0.0535" rpy="7.01267e-17 -1.0219e-16 -4.86796e-16"/>
+      <geometry>
+        <mesh filename="package://assets/spacer_ring.stl"/>
+      </geometry>
+      <material name="spacer_ring_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.93889e-18 5.85469e-18 -0.0535" rpy="7.01267e-17 -1.0219e-16 -4.86796e-16"/>
+      <geometry>
+        <mesh filename="package://assets/spacer_ring.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shell_3 -->
+    <visual>
+      <origin xyz="0 0.1 -0.0245" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shell.stl"/>
+      </geometry>
+      <material name="shell_3_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.1 -0.0245" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_ref_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_ref_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_3_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_3.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_3_3_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fhs_m2_5x06_nylok_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok_1.stl"/>
+      </geometry>
+      <material name="fhs_m2_5x06_nylok_1_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fhs_m2_5x06_nylok_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok.stl"/>
+      </geometry>
+      <material name="fhs_m2_5x06_nylok_3_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ehr_3_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3_1.stl"/>
+      </geometry>
+      <material name="ehr_3_1_3_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gear_5 -->
+    <visual>
+      <origin xyz="-0.0231 0.024 -0.0195" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+      <material name="gear_5_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0231 0.024 -0.0195" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part s3b_eh_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh_1.stl"/>
+      </geometry>
+      <material name="s3b_eh_1_3_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_2_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_2.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_2_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part s3b_eh_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh.stl"/>
+      </geometry>
+      <material name="s3b_eh_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gear_6 -->
+    <visual>
+      <origin xyz="0.0231 0.024 -0.0195" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+      <material name="gear_6_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0231 0.024 -0.0195" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_5_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_5.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_5_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_2_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_2.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_2_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_cap_ref_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_cap_ref_1_3_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_ref_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_ref_1_3_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_screw_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_screw_1_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_1_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_4_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_4.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_4_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_1.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_1_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_cap_ref_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_cap_ref_3_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_ref_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_ref.stl"/>
+      </geometry>
+      <material name="dc14_a01_ref_3_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_horn_ref_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_horn_ref_1_3_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_1_3_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_3_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_3.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_3_3_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_screw_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_screw_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_7_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_7.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_7_3_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_7.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_6_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_6.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_6_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_horn_ref_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_horn_ref_3_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ehr_3_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3.stl"/>
+      </geometry>
+      <material name="ehr_3_3_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_1_1_3 -->
+    <visual>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_1_1_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.16334e-17 0.012 -0.0195" rpy="-7.01267e-17 3.78831e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link shell_motor_4 -->
+  <link name="shell_motor_4">
+    <inertial>
+      <origin xyz="-0.000239027 0.00655795 -0.0243542" rpy="0 0 0"/>
+      <mass value="0.14763"/>
+      <inertia ixx="0.000538322" ixy="2.21958e-07" ixz="-2.69169e-07" iyy="7.25809e-05" iyz="-2.65012e-06" izz="0.000576666"/>
+    </inertial>
+    <!-- Part mgn7c_1_bearing_13 -->
+    <visual>
+      <origin xyz="-0.021 -0.088 -0.027" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_13_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.021 -0.088 -0.027" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_14 -->
+    <visual>
+      <origin xyz="0.021 -0.088 -0.027" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_14_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.021 -0.088 -0.027" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_15 -->
+    <visual>
+      <origin xyz="0.021 0.088 -0.027" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_15_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.021 0.088 -0.027" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_bearing_16 -->
+    <visual>
+      <origin xyz="-0.021 0.088 -0.027" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+      <material name="mgn7c_1_bearing_16_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.021 0.088 -0.027" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1_bearing.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spacer_ring_4 -->
+    <visual>
+      <origin xyz="0 -2.66714e-17 -0.056" rpy="1.9618e-15 5.8217e-17 1.14283e-15"/>
+      <geometry>
+        <mesh filename="package://assets/spacer_ring.stl"/>
+      </geometry>
+      <material name="spacer_ring_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -2.66714e-17 -0.056" rpy="1.9618e-15 5.8217e-17 1.14283e-15"/>
+      <geometry>
+        <mesh filename="package://assets/spacer_ring.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part shell_4 -->
+    <visual>
+      <origin xyz="6.93889e-18 0.1 -0.027" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shell.stl"/>
+      </geometry>
+      <material name="shell_4_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.93889e-18 0.1 -0.027" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/shell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_ref_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_ref_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_3_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_3.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_3_4_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fhs_m2_5x06_nylok_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok_1.stl"/>
+      </geometry>
+      <material name="fhs_m2_5x06_nylok_1_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part fhs_m2_5x06_nylok_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok.stl"/>
+      </geometry>
+      <material name="fhs_m2_5x06_nylok_4_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/fhs_m2_5x06_nylok.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ehr_3_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3_1.stl"/>
+      </geometry>
+      <material name="ehr_3_1_4_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gear_7 -->
+    <visual>
+      <origin xyz="-0.0231 0.024 -0.022" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+      <material name="gear_7_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0231 0.024 -0.022" rpy="1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part s3b_eh_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh_1.stl"/>
+      </geometry>
+      <material name="s3b_eh_1_4_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_2_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_2.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_2_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part s3b_eh_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh.stl"/>
+      </geometry>
+      <material name="s3b_eh_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/s3b_eh.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part gear_8 -->
+    <visual>
+      <origin xyz="0.0231 0.024 -0.022" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+      <material name="gear_8_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0231 0.024 -0.022" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_5_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_5.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_5_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_5.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_2_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_2.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_2_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_cap_ref_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_cap_ref_1_4_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_ref_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_ref_1_4_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_screw_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_screw_1_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_1_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_4_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_4.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_4_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part phs_m2x33_tap_k_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_1.stl"/>
+      </geometry>
+      <material name="phs_m2x33_tap_k_1_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/phs_m2x33_tap_k_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_cap_ref_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_cap_ref_4_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_cap_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_ref_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_ref.stl"/>
+      </geometry>
+      <material name="dc14_a01_ref_4_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_horn_ref_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref_1.stl"/>
+      </geometry>
+      <material name="dc11_a01_horn_ref_1_4_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_1_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_3_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_3.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_3_4_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_idler_screw_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw.stl"/>
+      </geometry>
+      <material name="dc11_a01_idler_screw_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_idler_screw.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_7_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_7.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_7_4_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_7.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_2_6_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_6.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_2_6_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_2_6.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc11_a01_horn_ref_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref.stl"/>
+      </geometry>
+      <material name="dc11_a01_horn_ref_4_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc11_a01_horn_ref.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ehr_3_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3.stl"/>
+      </geometry>
+      <material name="ehr_3_4_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/ehr_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part dc14_a01_insert_1_1_4 -->
+    <visual>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1_1.stl"/>
+      </geometry>
+      <material name="dc14_a01_insert_1_1_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.96745e-16 0.012 -0.022" rpy="-4.90421e-16 -2.25815e-18 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/dc14_a01_insert_1_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link slide_foot -->
+  <link name="slide_foot">
+    <inertial>
+      <origin xyz="-0.00263783 -0.0242937 0.0864998" rpy="0 0 0"/>
+      <mass value="0.0826415"/>
+      <inertia ixx="0.000724845" ixy="-7.09083e-09" ixz="1.1506e-10" iyy="0.000693048" iyz="-4.2586e-11" izz="4.22232e-05"/>
+    </inertial>
+    <!-- Part mgn7c_1 -->
+    <visual>
+      <origin xyz="-0.0035 -0.0453 0.182" rpy="3.14159 -7.83881e-26 -1.48689e-25"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0035 -0.0453 0.182" rpy="3.14159 -7.83881e-26 -1.48689e-25"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part footplate_hybrid -->
+    <visual>
+      <origin xyz="0.0225 -0.0243 0.0865" rpy="-1.5708 -5.3776e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+      <material name="footplate_hybrid_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0225 -0.0243 0.0865" rpy="-1.5708 -5.3776e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_2 -->
+    <visual>
+      <origin xyz="-0.0035 -0.0033 0.182" rpy="-3.14159 -3.18497e-18 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0035 -0.0033 0.182" rpy="-3.14159 -3.18497e-18 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part slide -->
+    <visual>
+      <origin xyz="0.0165 -0.0503 0.0865" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/slide.stl"/>
+      </geometry>
+      <material name="slide_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0165 -0.0503 0.0865" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/slide.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part footplate_hybrid_2 -->
+    <visual>
+      <origin xyz="-0.0295 -0.0243 0.0865" rpy="1.5708 -1.72601e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+      <material name="footplate_hybrid_2_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0295 -0.0243 0.0865" rpy="1.5708 -1.72601e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_3 -->
+    <visual>
+      <origin xyz="-0.0035 -0.0033 -0.009" rpy="-8.6613e-19 -2.71878e-30 -2.84527e-28"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_3_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0035 -0.0033 -0.009" rpy="-8.6613e-19 -2.71878e-30 -2.84527e-28"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_4 -->
+    <visual>
+      <origin xyz="-0.0035 -0.0453 -0.009" rpy="1.4311e-16 -3.18497e-18 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_4_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0035 -0.0453 -0.009" rpy="1.4311e-16 -3.18497e-18 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from shell_motor_4 to slide_foot -->
+  <joint name="12_leg4_pri" type="prismatic">
+    <origin xyz="-0.0243 -0.0875 -0.0305" rpy="-1.5708 1.5708 0"/>
+    <parent link="shell_motor_4"/>
+    <child link="slide_foot"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.017" upper="0.016"/>
+  </joint>
+  <!-- Joint from shell_motor_3 to shell_motor_4 -->
+  <joint name="11_leg3_rot" type="revolute">
+    <origin xyz="6.93889e-18 6.28837e-18 -0.0505" rpy="7.01267e-17 -1.0219e-16 -4.86796e-16"/>
+    <parent link="shell_motor_3"/>
+    <child link="shell_motor_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-2.61799" upper="2.61799"/>
+  </joint>
+  <!-- Link slide_foot_2 -->
+  <link name="slide_foot_2">
+    <inertial>
+      <origin xyz="-0.00263783 -0.0242937 0.0864998" rpy="0 0 0"/>
+      <mass value="0.0826415"/>
+      <inertia ixx="0.000724845" ixy="-7.09083e-09" ixz="1.1506e-10" iyy="0.000693048" iyz="-4.2586e-11" izz="4.22232e-05"/>
+    </inertial>
+    <!-- Part mgn7c_1_5 -->
+    <visual>
+      <origin xyz="-0.0035 -0.0453 0.182" rpy="-3.14159 1.30321e-15 4.56605e-16"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_5_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0035 -0.0453 0.182" rpy="-3.14159 1.30321e-15 4.56605e-16"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part footplate_hybrid_3 -->
+    <visual>
+      <origin xyz="0.0225 -0.0243 0.0865" rpy="-1.5708 -7.21087e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+      <material name="footplate_hybrid_3_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0225 -0.0243 0.0865" rpy="-1.5708 -7.21087e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_6 -->
+    <visual>
+      <origin xyz="-0.0035 -0.0033 0.182" rpy="3.14159 -2.41556e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_6_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0035 -0.0033 0.182" rpy="3.14159 -2.41556e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part slide_2 -->
+    <visual>
+      <origin xyz="0.0165 -0.0503 0.0865" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/slide.stl"/>
+      </geometry>
+      <material name="slide_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0165 -0.0503 0.0865" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/slide.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part footplate_hybrid_4 -->
+    <visual>
+      <origin xyz="-0.0295 -0.0243 0.0865" rpy="1.5708 -5.20732e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+      <material name="footplate_hybrid_4_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0295 -0.0243 0.0865" rpy="1.5708 -5.20732e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_7 -->
+    <visual>
+      <origin xyz="-0.0035 -0.0033 -0.009" rpy="3.29053e-19 -2.65136e-30 -5.84877e-29"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_7_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0035 -0.0033 -0.009" rpy="3.29053e-19 -2.65136e-30 -5.84877e-29"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_8 -->
+    <visual>
+      <origin xyz="-0.0035 -0.0453 -0.009" rpy="-6.37823e-16 -1.50443e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_8_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0035 -0.0453 -0.009" rpy="-6.37823e-16 -1.50443e-15 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from shell_motor_3 to slide_foot_2 -->
+  <joint name="10_leg3_pri" type="prismatic">
+    <origin xyz="-0.0243 -0.0875 -0.028" rpy="-1.5708 1.5708 0"/>
+    <parent link="shell_motor_3"/>
+    <child link="slide_foot_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.017" upper="0.016"/>
+  </joint>
+  <!-- Joint from shell_motor_2 to shell_motor_3 -->
+  <joint name="9_leg2_rot" type="revolute">
+    <origin xyz="7.63278e-17 -2.53161e-16 -0.054" rpy="-4.85178e-15 -6.31598e-16 4.87129e-16"/>
+    <parent link="shell_motor_2"/>
+    <child link="shell_motor_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-2.61799" upper="2.61799"/>
+  </joint>
+  <!-- Link slide_foot_3 -->
+  <link name="slide_foot_3">
+    <inertial>
+      <origin xyz="0.00436217 -0.0242937 0.0574998" rpy="0 0 0"/>
+      <mass value="0.0826415"/>
+      <inertia ixx="0.000724845" ixy="-7.09083e-09" ixz="1.1506e-10" iyy="0.000693048" iyz="-4.2586e-11" izz="4.22232e-05"/>
+    </inertial>
+    <!-- Part mgn7c_1_9 -->
+    <visual>
+      <origin xyz="0.0035 -0.0453 0.153" rpy="3.14159 6.93889e-17 -1.38778e-17"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_9_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0035 -0.0453 0.153" rpy="3.14159 6.93889e-17 -1.38778e-17"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part footplate_hybrid_5 -->
+    <visual>
+      <origin xyz="0.0295 -0.0243 0.0575" rpy="-1.5708 -3.51478e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+      <material name="footplate_hybrid_5_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0295 -0.0243 0.0575" rpy="-1.5708 -3.51478e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_10 -->
+    <visual>
+      <origin xyz="0.0035 -0.0033 0.153" rpy="3.14159 -2.56739e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_10_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0035 -0.0033 0.153" rpy="3.14159 -2.56739e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part slide_3 -->
+    <visual>
+      <origin xyz="0.0235 -0.0503 0.0575" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/slide.stl"/>
+      </geometry>
+      <material name="slide_3_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0235 -0.0503 0.0575" rpy="-1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/slide.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part footplate_hybrid_6 -->
+    <visual>
+      <origin xyz="-0.0225 -0.0243 0.0575" rpy="1.5708 7.98614e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+      <material name="footplate_hybrid_6_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0225 -0.0243 0.0575" rpy="1.5708 7.98614e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_11 -->
+    <visual>
+      <origin xyz="0.0035 -0.0033 -0.038" rpy="-6.60434e-19 -4.11718e-30 -2.05778e-28"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_11_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0035 -0.0033 -0.038" rpy="-6.60434e-19 -4.11718e-30 -2.05778e-28"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_12 -->
+    <visual>
+      <origin xyz="0.0035 -0.0453 -0.038" rpy="-1.23498e-17 -2.56739e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_12_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0035 -0.0453 -0.038" rpy="-1.23498e-17 -2.56739e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from shell_motor_2 to slide_foot_3 -->
+  <joint name="8_leg2_pri" type="prismatic">
+    <origin xyz="-0.0243 -0.0585 -0.022" rpy="-1.5708 1.5708 0"/>
+    <parent link="shell_motor_2"/>
+    <child link="slide_foot_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.013" upper="0.0195"/>
+  </joint>
+  <!-- Joint from shell_motor to shell_motor_2 -->
+  <joint name="7_leg_1_rot" type="revolute">
+    <origin xyz="-0.0523992 -0.0402925 0.000828808" rpy="-1.5708 0.00732023 1.5708"/>
+    <parent link="shell_motor"/>
+    <child link="shell_motor_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-2.61799" upper="2.61799"/>
+  </joint>
+  <!-- Link slide_foot_4 -->
+  <link name="slide_foot_4">
+    <inertial>
+      <origin xyz="0.00263783 -0.0243063 0.0864998" rpy="0 0 0"/>
+      <mass value="0.0826415"/>
+      <inertia ixx="0.000724845" ixy="-7.09083e-09" ixz="-1.1506e-10" iyy="0.000693048" iyz="4.2586e-11" izz="4.22232e-05"/>
+    </inertial>
+    <!-- Part mgn7c_1_13 -->
+    <visual>
+      <origin xyz="0.0035 -0.0033 0.182" rpy="3.14159 -7.42462e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_13_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0035 -0.0033 0.182" rpy="3.14159 -7.42462e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part footplate_hybrid_7 -->
+    <visual>
+      <origin xyz="-0.0225 -0.0243 0.0865" rpy="-1.5708 -3.86639e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+      <material name="footplate_hybrid_7_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0225 -0.0243 0.0865" rpy="-1.5708 -3.86639e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_14 -->
+    <visual>
+      <origin xyz="0.0035 -0.0453 0.182" rpy="-3.14159 -2.38027e-30 -2.75797e-28"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_14_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0035 -0.0453 0.182" rpy="-3.14159 -2.38027e-30 -2.75797e-28"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part slide_4 -->
+    <visual>
+      <origin xyz="-0.0165 0.0017 0.0865" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/slide.stl"/>
+      </geometry>
+      <material name="slide_4_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0165 0.0017 0.0865" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/slide.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part footplate_hybrid_8 -->
+    <visual>
+      <origin xyz="0.0295 -0.0243 0.0865" rpy="1.5708 7.86002e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+      <material name="footplate_hybrid_8_material">
+        <color rgba="0.623529 0.666667 0.701961 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0295 -0.0243 0.0865" rpy="1.5708 7.86002e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/footplate_hybrid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_15 -->
+    <visual>
+      <origin xyz="0.0035 -0.0453 -0.009" rpy="-1.73661e-16 1.6161e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_15_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0035 -0.0453 -0.009" rpy="-1.73661e-16 1.6161e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mgn7c_1_16 -->
+    <visual>
+      <origin xyz="0.0035 -0.0033 -0.009" rpy="-6.78894e-19 -8.00017e-31 -2.74031e-28"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+      <material name="mgn7c_1_16_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0035 -0.0033 -0.009" rpy="-6.78894e-19 -8.00017e-31 -2.74031e-28"/>
+      <geometry>
+        <mesh filename="package://assets/mgn7c_1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from shell_motor to slide_foot_4 -->
+  <joint name="6_leg1_pri" type="prismatic">
+    <origin xyz="-0.0763992 -0.0153526 0.0881486" rpy="-3.13427 1.34304e-14 -3.14159"/>
+    <parent link="shell_motor"/>
+    <child link="slide_foot_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.017" upper="0.016"/>
+  </joint>
+</robot>

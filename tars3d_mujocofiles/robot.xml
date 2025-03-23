@@ -1,0 +1,684 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/a64fb0fa5d8889a75972d3a2/w/d78c72d4ae1e509038d50c03/e/e5909fb36b7c024fca2a2aa0 -->
+<mujoco model="TARS3D">
+  <compiler angle="radian" meshdir="assets" autolimits="true"/>
+  <default>
+    <default class="TARS3D">
+      <joint frictionloss="0.1" armature="0.005"/>
+      <position kp="200" dampratio="1"/>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+    <default class="TARS3D_prismatic">
+      <joint frictionloss="0.1" armature="0.005"/>
+      <position kp="1000" dampratio="0.8"/>
+    </default>
+  </default>
+  <worldbody>
+
+    <!-- Link shell_motor -->
+    <body name="shell_motor" pos="0 0 0" quat="1 0 0 0" childclass="TARS3D">
+      <freejoint name="shell_motor_freejoint"/>
+      <inertial pos="-0.0825449 -0.0405795 -0.00572721" mass="0.14763" fullinertia="0.000576666 0.000538294 7.26091e-05 2.49762e-07 -2.65202e-06 -3.63115e-06"/>
+      <!-- Part mgn7c_1_bearing -->
+      <geom type="mesh" class="visual" pos="-0.0798992 -0.0606478 0.0889802" quat="0.00366011 0.999993 2.92674e-12 2.01877e-14" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+      <geom type="mesh" class="collision" pos="-0.0798992 -0.0606478 0.0889802" quat="0.00366011 0.999993 2.92674e-12 2.01877e-14" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+      <!-- Part mgn7c_1_bearing_2 -->
+      <geom type="mesh" class="visual" pos="-0.0798992 -0.0186489 0.0886727" quat="0.999993 -0.00366011 -1.4877e-14 2.92661e-12" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+      <geom type="mesh" class="collision" pos="-0.0798992 -0.0186489 0.0886727" quat="0.999993 -0.00366011 -1.4877e-14 2.92661e-12" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+      <!-- Part mgn7c_1_bearing_3 -->
+      <geom type="mesh" class="visual" pos="-0.0798992 -0.0199372 -0.0873226" quat="0.999993 -0.00366011 -1.84297e-14 2.92663e-12" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+      <geom type="mesh" class="collision" pos="-0.0798992 -0.0199372 -0.0873226" quat="0.999993 -0.00366011 -1.84297e-14 2.92663e-12" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+      <!-- Part mgn7c_1_bearing_4 -->
+      <geom type="mesh" class="visual" pos="-0.0798992 -0.0619361 -0.0870151" quat="0.00366011 0.999993 2.92662e-12 1.6969e-14" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+      <geom type="mesh" class="collision" pos="-0.0798992 -0.0619361 -0.0870151" quat="0.00366011 0.999993 2.92662e-12 1.6969e-14" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+      <!-- Part spacer_ring -->
+      <geom type="mesh" class="visual" pos="-0.0508992 -0.0402925 0.000828808" quat="0.498167 -0.501827 -0.498167 0.501827" mesh="spacer_ring" material="spacer_ring_material"/>
+      <geom type="mesh" class="collision" pos="-0.0508992 -0.0402925 0.000828808" quat="0.498167 -0.501827 -0.498167 0.501827" mesh="spacer_ring" material="spacer_ring_material"/>
+      <!-- Part shell -->
+      <geom type="mesh" class="visual" pos="-0.0798992 -0.0410245 -0.0991685" quat="0.999993 -0.00366011 -1.72085e-14 2.92686e-12" mesh="shell" material="shell_material"/>
+      <geom type="mesh" class="collision" pos="-0.0798992 -0.0410245 -0.0991685" quat="0.999993 -0.00366011 -1.72085e-14 2.92686e-12" mesh="shell" material="shell_material"/>
+      <!-- Part dc11_a01_idler_ref -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_ref" material="dc11_a01_idler_ref_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_ref" material="dc11_a01_idler_ref_material"/>
+      <!-- Part phs_m2x33_tap_k_3 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
+      <!-- Part fhs_m2_5x06_nylok_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+      <!-- Part fhs_m2_5x06_nylok -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
+      <!-- Part ehr_3_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="ehr_3_1" material="ehr_3_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="ehr_3_1" material="ehr_3_1_material"/>
+      <!-- Part gear -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0635676 -0.0230015" quat="2.92598e-12 -1.4182e-13 -0.00366011 -0.999993" mesh="gear" material="gear_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0635676 -0.0230015" quat="2.92598e-12 -1.4182e-13 -0.00366011 -0.999993" mesh="gear" material="gear_material"/>
+      <!-- Part s3b_eh_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="s3b_eh_1" material="s3b_eh_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="s3b_eh_1" material="s3b_eh_1_material"/>
+      <!-- Part phs_m2x33_tap_k_2 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="phs_m2x33_tap_k_2" material="phs_m2x33_tap_k_2_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="phs_m2x33_tap_k_2" material="phs_m2x33_tap_k_2_material"/>
+      <!-- Part s3b_eh -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="s3b_eh" material="s3b_eh_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="s3b_eh" material="s3b_eh_material"/>
+      <!-- Part phs_m2x33_tap_k -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="phs_m2x33_tap_k" material="phs_m2x33_tap_k_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="phs_m2x33_tap_k" material="phs_m2x33_tap_k_material"/>
+      <!-- Part gear_2 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0173688 -0.0233396" quat="0.999993 -0.00366011 1.54543e-13 2.92593e-12" mesh="gear" material="gear_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0173688 -0.0233396" quat="0.999993 -0.00366011 1.54543e-13 2.92593e-12" mesh="gear" material="gear_material"/>
+      <!-- Part dc14_a01_insert_2 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2" material="dc14_a01_insert_2_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2" material="dc14_a01_insert_2_material"/>
+      <!-- Part dc14_a01_insert_2_5 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_5" material="dc14_a01_insert_2_5_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_5" material="dc14_a01_insert_2_5_material"/>
+      <!-- Part dc14_a01_insert_2_2 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_2" material="dc14_a01_insert_2_2_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_2" material="dc14_a01_insert_2_2_material"/>
+      <!-- Part dc11_a01_idler_cap_ref_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_cap_ref_1" material="dc11_a01_idler_cap_ref_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_cap_ref_1" material="dc11_a01_idler_cap_ref_1_material"/>
+      <!-- Part dc11_a01_idler_ref_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_ref_1" material="dc11_a01_idler_ref_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_ref_1" material="dc11_a01_idler_ref_1_material"/>
+      <!-- Part dc11_a01_idler_screw_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_screw_1" material="dc11_a01_idler_screw_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_screw_1" material="dc11_a01_idler_screw_1_material"/>
+      <!-- Part dc14_a01_insert_2_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_1" material="dc14_a01_insert_2_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_1" material="dc14_a01_insert_2_1_material"/>
+      <!-- Part dc14_a01_insert_2_4 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_4" material="dc14_a01_insert_2_4_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_4" material="dc14_a01_insert_2_4_material"/>
+      <!-- Part phs_m2x33_tap_k_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="phs_m2x33_tap_k_1" material="phs_m2x33_tap_k_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="phs_m2x33_tap_k_1" material="phs_m2x33_tap_k_1_material"/>
+      <!-- Part dc11_a01_idler_cap_ref -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_cap_ref" material="dc11_a01_idler_cap_ref_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_cap_ref" material="dc11_a01_idler_cap_ref_material"/>
+      <!-- Part dc14_a01_ref -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_ref" material="dc14_a01_ref_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_ref" material="dc14_a01_ref_material"/>
+      <!-- Part dc11_a01_horn_ref_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_horn_ref_1" material="dc11_a01_horn_ref_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_horn_ref_1" material="dc11_a01_horn_ref_1_material"/>
+      <!-- Part dc14_a01_insert_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_1" material="dc14_a01_insert_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_1" material="dc14_a01_insert_1_material"/>
+      <!-- Part dc14_a01_insert_2_3 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_3" material="dc14_a01_insert_2_3_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_3" material="dc14_a01_insert_2_3_material"/>
+      <!-- Part dc11_a01_idler_screw -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_screw" material="dc11_a01_idler_screw_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_idler_screw" material="dc11_a01_idler_screw_material"/>
+      <!-- Part dc14_a01_insert_2_7 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_7" material="dc14_a01_insert_2_7_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_7" material="dc14_a01_insert_2_7_material"/>
+      <!-- Part dc14_a01_insert_2_6 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_6" material="dc14_a01_insert_2_6_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_2_6" material="dc14_a01_insert_2_6_material"/>
+      <!-- Part dc11_a01_horn_ref -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_horn_ref" material="dc11_a01_horn_ref_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc11_a01_horn_ref" material="dc11_a01_horn_ref_material"/>
+      <!-- Part ehr_3 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="ehr_3" material="ehr_3_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="ehr_3" material="ehr_3_material"/>
+      <!-- Part dc14_a01_insert_1_1 -->
+      <geom type="mesh" class="visual" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_1_1" material="dc14_a01_insert_1_1_material"/>
+      <geom type="mesh" class="collision" pos="-0.0848992 -0.0403803 -0.0111709" quat="0.501827 0.498167 -0.501827 -0.498167" mesh="dc14_a01_insert_1_1" material="dc14_a01_insert_1_1_material"/>
+      <!-- Link shell_motor_2 -->
+      <body name="shell_motor_2" pos="-0.0523992 -0.0402925 0.000828808" quat="0.498167 -0.501827 -0.498167 0.501827">
+        <!-- Joint from shell_motor to shell_motor_2 -->
+        <joint name="7_leg_1_rot" type="hinge" range="-2.6179938779914935 2.6179938779914953"/>
+        <inertial pos="-0.000239027 0.00655795 -0.0228542" mass="0.14763" fullinertia="0.000538322 7.25809e-05 0.000576666 2.21958e-07 -2.69169e-07 -2.65012e-06"/>
+        <!-- Part mgn7c_1_bearing_5 -->
+        <geom type="mesh" class="visual" pos="-0.021 -0.088 -0.0255" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+        <geom type="mesh" class="collision" pos="-0.021 -0.088 -0.0255" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+        <!-- Part mgn7c_1_bearing_6 -->
+        <geom type="mesh" class="visual" pos="0.021 -0.088 -0.0255" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.021 -0.088 -0.0255" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+        <!-- Part mgn7c_1_bearing_7 -->
+        <geom type="mesh" class="visual" pos="0.021 0.088 -0.0255" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.021 0.088 -0.0255" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+        <!-- Part mgn7c_1_bearing_8 -->
+        <geom type="mesh" class="visual" pos="-0.021 0.088 -0.0255" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+        <geom type="mesh" class="collision" pos="-0.021 0.088 -0.0255" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+        <!-- Part spacer_ring_2 -->
+        <geom type="mesh" class="visual" pos="7.63278e-17 -2.52511e-16 -0.0545" quat="1 -2.32311e-15 -3.33067e-16 2.21544e-19" mesh="spacer_ring" material="spacer_ring_material"/>
+        <geom type="mesh" class="collision" pos="7.63278e-17 -2.52511e-16 -0.0545" quat="1 -2.32311e-15 -3.33067e-16 2.21544e-19" mesh="spacer_ring" material="spacer_ring_material"/>
+        <!-- Part shell_2 -->
+        <geom type="mesh" class="visual" pos="-1.38778e-17 0.1 -0.0255" quat="0.5 0.5 0.5 -0.5" mesh="shell" material="shell_material"/>
+        <geom type="mesh" class="collision" pos="-1.38778e-17 0.1 -0.0255" quat="0.5 0.5 0.5 -0.5" mesh="shell" material="shell_material"/>
+        <!-- Part dc11_a01_idler_ref_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_ref" material="dc11_a01_idler_ref_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_ref" material="dc11_a01_idler_ref_material"/>
+        <!-- Part phs_m2x33_tap_k_3_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
+        <!-- Part fhs_m2_5x06_nylok_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+        <!-- Part fhs_m2_5x06_nylok_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
+        <!-- Part ehr_3_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="ehr_3_1" material="ehr_3_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="ehr_3_1" material="ehr_3_1_material"/>
+        <!-- Part gear_3 -->
+        <geom type="mesh" class="visual" pos="-0.0231 0.024 -0.0205" quat="0.5 0.5 -0.5 0.5" mesh="gear" material="gear_material"/>
+        <geom type="mesh" class="collision" pos="-0.0231 0.024 -0.0205" quat="0.5 0.5 -0.5 0.5" mesh="gear" material="gear_material"/>
+        <!-- Part s3b_eh_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="s3b_eh_1" material="s3b_eh_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="s3b_eh_1" material="s3b_eh_1_material"/>
+        <!-- Part phs_m2x33_tap_k_2_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="phs_m2x33_tap_k_2" material="phs_m2x33_tap_k_2_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="phs_m2x33_tap_k_2" material="phs_m2x33_tap_k_2_material"/>
+        <!-- Part s3b_eh_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="s3b_eh" material="s3b_eh_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="s3b_eh" material="s3b_eh_material"/>
+        <!-- Part phs_m2x33_tap_k_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="phs_m2x33_tap_k" material="phs_m2x33_tap_k_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="phs_m2x33_tap_k" material="phs_m2x33_tap_k_material"/>
+        <!-- Part gear_4 -->
+        <geom type="mesh" class="visual" pos="0.0231 0.024 -0.0205" quat="0.5 0.5 0.5 -0.5" mesh="gear" material="gear_material"/>
+        <geom type="mesh" class="collision" pos="0.0231 0.024 -0.0205" quat="0.5 0.5 0.5 -0.5" mesh="gear" material="gear_material"/>
+        <!-- Part dc14_a01_insert_2_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2" material="dc14_a01_insert_2_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2" material="dc14_a01_insert_2_material"/>
+        <!-- Part dc14_a01_insert_2_5_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_5" material="dc14_a01_insert_2_5_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_5" material="dc14_a01_insert_2_5_material"/>
+        <!-- Part dc14_a01_insert_2_2_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_2" material="dc14_a01_insert_2_2_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_2" material="dc14_a01_insert_2_2_material"/>
+        <!-- Part dc11_a01_idler_cap_ref_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_cap_ref_1" material="dc11_a01_idler_cap_ref_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_cap_ref_1" material="dc11_a01_idler_cap_ref_1_material"/>
+        <!-- Part dc11_a01_idler_ref_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_ref_1" material="dc11_a01_idler_ref_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_ref_1" material="dc11_a01_idler_ref_1_material"/>
+        <!-- Part dc11_a01_idler_screw_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_screw_1" material="dc11_a01_idler_screw_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_screw_1" material="dc11_a01_idler_screw_1_material"/>
+        <!-- Part dc14_a01_insert_2_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_1" material="dc14_a01_insert_2_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_1" material="dc14_a01_insert_2_1_material"/>
+        <!-- Part dc14_a01_insert_2_4_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_4" material="dc14_a01_insert_2_4_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_4" material="dc14_a01_insert_2_4_material"/>
+        <!-- Part phs_m2x33_tap_k_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="phs_m2x33_tap_k_1" material="phs_m2x33_tap_k_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="phs_m2x33_tap_k_1" material="phs_m2x33_tap_k_1_material"/>
+        <!-- Part dc11_a01_idler_cap_ref_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_cap_ref" material="dc11_a01_idler_cap_ref_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_cap_ref" material="dc11_a01_idler_cap_ref_material"/>
+        <!-- Part dc14_a01_ref_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_ref" material="dc14_a01_ref_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_ref" material="dc14_a01_ref_material"/>
+        <!-- Part dc11_a01_horn_ref_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_horn_ref_1" material="dc11_a01_horn_ref_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_horn_ref_1" material="dc11_a01_horn_ref_1_material"/>
+        <!-- Part dc14_a01_insert_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_1" material="dc14_a01_insert_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_1" material="dc14_a01_insert_1_material"/>
+        <!-- Part dc14_a01_insert_2_3_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_3" material="dc14_a01_insert_2_3_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_3" material="dc14_a01_insert_2_3_material"/>
+        <!-- Part dc11_a01_idler_screw_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_screw" material="dc11_a01_idler_screw_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_idler_screw" material="dc11_a01_idler_screw_material"/>
+        <!-- Part dc14_a01_insert_2_7_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_7" material="dc14_a01_insert_2_7_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_7" material="dc14_a01_insert_2_7_material"/>
+        <!-- Part dc14_a01_insert_2_6_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_6" material="dc14_a01_insert_2_6_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_2_6" material="dc14_a01_insert_2_6_material"/>
+        <!-- Part dc11_a01_horn_ref_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_horn_ref" material="dc11_a01_horn_ref_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc11_a01_horn_ref" material="dc11_a01_horn_ref_material"/>
+        <!-- Part ehr_3_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="ehr_3" material="ehr_3_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="ehr_3" material="ehr_3_material"/>
+        <!-- Part dc14_a01_insert_1_1_2 -->
+        <geom type="mesh" class="visual" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_1_1" material="dc14_a01_insert_1_1_material"/>
+        <geom type="mesh" class="collision" pos="-4.85723e-17 0.012 -0.0205" quat="2.42867e-16 6.66134e-16 -1.77636e-15 -1" mesh="dc14_a01_insert_1_1" material="dc14_a01_insert_1_1_material"/>
+        <!-- Link shell_motor_3 -->
+        <body name="shell_motor_3" pos="7.63278e-17 -2.53161e-16 -0.054" quat="1 -2.47025e-15 1.11022e-16 2.42697e-16">
+          <!-- Joint from shell_motor_2 to shell_motor_3 -->
+          <joint name="9_leg2_rot" type="hinge" range="-2.6179938779914935 2.6179938779914953"/>
+          <inertial pos="-0.000239027 0.00655795 -0.0218542" mass="0.14763" fullinertia="0.000538322 7.25809e-05 0.000576666 2.21958e-07 -2.69169e-07 -2.65012e-06"/>
+          <!-- Part mgn7c_1_bearing_9 -->
+          <geom type="mesh" class="visual" pos="-0.021 -0.088 -0.0245" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+          <geom type="mesh" class="collision" pos="-0.021 -0.088 -0.0245" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+          <!-- Part mgn7c_1_bearing_10 -->
+          <geom type="mesh" class="visual" pos="0.021 -0.088 -0.0245" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+          <geom type="mesh" class="collision" pos="0.021 -0.088 -0.0245" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+          <!-- Part mgn7c_1_bearing_11 -->
+          <geom type="mesh" class="visual" pos="0.021 0.088 -0.0245" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+          <geom type="mesh" class="collision" pos="0.021 0.088 -0.0245" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+          <!-- Part mgn7c_1_bearing_12 -->
+          <geom type="mesh" class="visual" pos="-0.021 0.088 -0.0245" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+          <geom type="mesh" class="collision" pos="-0.021 0.088 -0.0245" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+          <!-- Part spacer_ring_3 -->
+          <geom type="mesh" class="visual" pos="6.93889e-18 5.85469e-18 -0.0535" quat="1 0 2.22045e-16 -2.41573e-16" mesh="spacer_ring" material="spacer_ring_material"/>
+          <geom type="mesh" class="collision" pos="6.93889e-18 5.85469e-18 -0.0535" quat="1 0 2.22045e-16 -2.41573e-16" mesh="spacer_ring" material="spacer_ring_material"/>
+          <!-- Part shell_3 -->
+          <geom type="mesh" class="visual" pos="0 0.1 -0.0245" quat="0.5 0.5 0.5 -0.5" mesh="shell" material="shell_material"/>
+          <geom type="mesh" class="collision" pos="0 0.1 -0.0245" quat="0.5 0.5 0.5 -0.5" mesh="shell" material="shell_material"/>
+          <!-- Part dc11_a01_idler_ref_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_ref" material="dc11_a01_idler_ref_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_ref" material="dc11_a01_idler_ref_material"/>
+          <!-- Part phs_m2x33_tap_k_3_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
+          <!-- Part fhs_m2_5x06_nylok_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+          <!-- Part fhs_m2_5x06_nylok_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
+          <!-- Part ehr_3_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="ehr_3_1" material="ehr_3_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="ehr_3_1" material="ehr_3_1_material"/>
+          <!-- Part gear_5 -->
+          <geom type="mesh" class="visual" pos="-0.0231 0.024 -0.0195" quat="0.5 0.5 -0.5 0.5" mesh="gear" material="gear_material"/>
+          <geom type="mesh" class="collision" pos="-0.0231 0.024 -0.0195" quat="0.5 0.5 -0.5 0.5" mesh="gear" material="gear_material"/>
+          <!-- Part s3b_eh_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="s3b_eh_1" material="s3b_eh_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="s3b_eh_1" material="s3b_eh_1_material"/>
+          <!-- Part phs_m2x33_tap_k_2_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="phs_m2x33_tap_k_2" material="phs_m2x33_tap_k_2_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="phs_m2x33_tap_k_2" material="phs_m2x33_tap_k_2_material"/>
+          <!-- Part s3b_eh_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="s3b_eh" material="s3b_eh_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="s3b_eh" material="s3b_eh_material"/>
+          <!-- Part phs_m2x33_tap_k_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="phs_m2x33_tap_k" material="phs_m2x33_tap_k_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="phs_m2x33_tap_k" material="phs_m2x33_tap_k_material"/>
+          <!-- Part gear_6 -->
+          <geom type="mesh" class="visual" pos="0.0231 0.024 -0.0195" quat="0.5 0.5 0.5 -0.5" mesh="gear" material="gear_material"/>
+          <geom type="mesh" class="collision" pos="0.0231 0.024 -0.0195" quat="0.5 0.5 0.5 -0.5" mesh="gear" material="gear_material"/>
+          <!-- Part dc14_a01_insert_2_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2" material="dc14_a01_insert_2_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2" material="dc14_a01_insert_2_material"/>
+          <!-- Part dc14_a01_insert_2_5_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_5" material="dc14_a01_insert_2_5_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_5" material="dc14_a01_insert_2_5_material"/>
+          <!-- Part dc14_a01_insert_2_2_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_2" material="dc14_a01_insert_2_2_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_2" material="dc14_a01_insert_2_2_material"/>
+          <!-- Part dc11_a01_idler_cap_ref_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_cap_ref_1" material="dc11_a01_idler_cap_ref_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_cap_ref_1" material="dc11_a01_idler_cap_ref_1_material"/>
+          <!-- Part dc11_a01_idler_ref_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_ref_1" material="dc11_a01_idler_ref_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_ref_1" material="dc11_a01_idler_ref_1_material"/>
+          <!-- Part dc11_a01_idler_screw_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_screw_1" material="dc11_a01_idler_screw_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_screw_1" material="dc11_a01_idler_screw_1_material"/>
+          <!-- Part dc14_a01_insert_2_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_1" material="dc14_a01_insert_2_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_1" material="dc14_a01_insert_2_1_material"/>
+          <!-- Part dc14_a01_insert_2_4_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_4" material="dc14_a01_insert_2_4_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_4" material="dc14_a01_insert_2_4_material"/>
+          <!-- Part phs_m2x33_tap_k_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="phs_m2x33_tap_k_1" material="phs_m2x33_tap_k_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="phs_m2x33_tap_k_1" material="phs_m2x33_tap_k_1_material"/>
+          <!-- Part dc11_a01_idler_cap_ref_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_cap_ref" material="dc11_a01_idler_cap_ref_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_cap_ref" material="dc11_a01_idler_cap_ref_material"/>
+          <!-- Part dc14_a01_ref_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_ref" material="dc14_a01_ref_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_ref" material="dc14_a01_ref_material"/>
+          <!-- Part dc11_a01_horn_ref_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_horn_ref_1" material="dc11_a01_horn_ref_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_horn_ref_1" material="dc11_a01_horn_ref_1_material"/>
+          <!-- Part dc14_a01_insert_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_1" material="dc14_a01_insert_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_1" material="dc14_a01_insert_1_material"/>
+          <!-- Part dc14_a01_insert_2_3_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_3" material="dc14_a01_insert_2_3_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_3" material="dc14_a01_insert_2_3_material"/>
+          <!-- Part dc11_a01_idler_screw_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_screw" material="dc11_a01_idler_screw_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_idler_screw" material="dc11_a01_idler_screw_material"/>
+          <!-- Part dc14_a01_insert_2_7_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_7" material="dc14_a01_insert_2_7_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_7" material="dc14_a01_insert_2_7_material"/>
+          <!-- Part dc14_a01_insert_2_6_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_6" material="dc14_a01_insert_2_6_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_2_6" material="dc14_a01_insert_2_6_material"/>
+          <!-- Part dc11_a01_horn_ref_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_horn_ref" material="dc11_a01_horn_ref_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc11_a01_horn_ref" material="dc11_a01_horn_ref_material"/>
+          <!-- Part ehr_3_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="ehr_3" material="ehr_3_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="ehr_3" material="ehr_3_material"/>
+          <!-- Part dc14_a01_insert_1_1_3 -->
+          <geom type="mesh" class="visual" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_1_1" material="dc14_a01_insert_1_1_material"/>
+          <geom type="mesh" class="collision" pos="-4.16334e-17 0.012 -0.0195" quat="4.11415e-19 -1.11022e-16 1.11022e-16 1" mesh="dc14_a01_insert_1_1" material="dc14_a01_insert_1_1_material"/>
+          <!-- Link shell_motor_4 -->
+          <body name="shell_motor_4" pos="6.93889e-18 6.28837e-18 -0.0505" quat="1 0 2.22045e-16 -2.41573e-16">
+            <!-- Joint from shell_motor_3 to shell_motor_4 -->
+            <joint name="11_leg3_rot" type="hinge" range="-2.6179938779914944 2.6179938779914944"/>
+            <inertial pos="-0.000239027 0.00655795 -0.0243542" mass="0.14763" fullinertia="0.000538322 7.25809e-05 0.000576666 2.21958e-07 -2.69169e-07 -2.65012e-06"/>
+            <!-- Part mgn7c_1_bearing_13 -->
+            <geom type="mesh" class="visual" pos="-0.021 -0.088 -0.027" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+            <geom type="mesh" class="collision" pos="-0.021 -0.088 -0.027" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+            <!-- Part mgn7c_1_bearing_14 -->
+            <geom type="mesh" class="visual" pos="0.021 -0.088 -0.027" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+            <geom type="mesh" class="collision" pos="0.021 -0.088 -0.027" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+            <!-- Part mgn7c_1_bearing_15 -->
+            <geom type="mesh" class="visual" pos="0.021 0.088 -0.027" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+            <geom type="mesh" class="collision" pos="0.021 0.088 -0.027" quat="0.5 0.5 0.5 -0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+            <!-- Part mgn7c_1_bearing_16 -->
+            <geom type="mesh" class="visual" pos="-0.021 0.088 -0.027" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+            <geom type="mesh" class="collision" pos="-0.021 0.088 -0.027" quat="0.5 -0.5 0.5 0.5" mesh="mgn7c_1_bearing" material="mgn7c_1_bearing_material"/>
+            <!-- Part spacer_ring_4 -->
+            <geom type="mesh" class="visual" pos="0 -2.66714e-17 -0.056" quat="1 9.75399e-16 -0 6.02365e-16" mesh="spacer_ring" material="spacer_ring_material"/>
+            <geom type="mesh" class="collision" pos="0 -2.66714e-17 -0.056" quat="1 9.75399e-16 -0 6.02365e-16" mesh="spacer_ring" material="spacer_ring_material"/>
+            <!-- Part shell_4 -->
+            <geom type="mesh" class="visual" pos="6.93889e-18 0.1 -0.027" quat="0.5 0.5 0.5 -0.5" mesh="shell" material="shell_material"/>
+            <geom type="mesh" class="collision" pos="6.93889e-18 0.1 -0.027" quat="0.5 0.5 0.5 -0.5" mesh="shell" material="shell_material"/>
+            <!-- Part dc11_a01_idler_ref_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_ref" material="dc11_a01_idler_ref_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_ref" material="dc11_a01_idler_ref_material"/>
+            <!-- Part phs_m2x33_tap_k_3_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
+            <!-- Part fhs_m2_5x06_nylok_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+            <!-- Part fhs_m2_5x06_nylok_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
+            <!-- Part ehr_3_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="ehr_3_1" material="ehr_3_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="ehr_3_1" material="ehr_3_1_material"/>
+            <!-- Part gear_7 -->
+            <geom type="mesh" class="visual" pos="-0.0231 0.024 -0.022" quat="0.5 0.5 -0.5 0.5" mesh="gear" material="gear_material"/>
+            <geom type="mesh" class="collision" pos="-0.0231 0.024 -0.022" quat="0.5 0.5 -0.5 0.5" mesh="gear" material="gear_material"/>
+            <!-- Part s3b_eh_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="s3b_eh_1" material="s3b_eh_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="s3b_eh_1" material="s3b_eh_1_material"/>
+            <!-- Part phs_m2x33_tap_k_2_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k_2" material="phs_m2x33_tap_k_2_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k_2" material="phs_m2x33_tap_k_2_material"/>
+            <!-- Part s3b_eh_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="s3b_eh" material="s3b_eh_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="s3b_eh" material="s3b_eh_material"/>
+            <!-- Part phs_m2x33_tap_k_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k" material="phs_m2x33_tap_k_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k" material="phs_m2x33_tap_k_material"/>
+            <!-- Part gear_8 -->
+            <geom type="mesh" class="visual" pos="0.0231 0.024 -0.022" quat="0.5 0.5 0.5 -0.5" mesh="gear" material="gear_material"/>
+            <geom type="mesh" class="collision" pos="0.0231 0.024 -0.022" quat="0.5 0.5 0.5 -0.5" mesh="gear" material="gear_material"/>
+            <!-- Part dc14_a01_insert_2_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2" material="dc14_a01_insert_2_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2" material="dc14_a01_insert_2_material"/>
+            <!-- Part dc14_a01_insert_2_5_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_5" material="dc14_a01_insert_2_5_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_5" material="dc14_a01_insert_2_5_material"/>
+            <!-- Part dc14_a01_insert_2_2_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_2" material="dc14_a01_insert_2_2_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_2" material="dc14_a01_insert_2_2_material"/>
+            <!-- Part dc11_a01_idler_cap_ref_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_cap_ref_1" material="dc11_a01_idler_cap_ref_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_cap_ref_1" material="dc11_a01_idler_cap_ref_1_material"/>
+            <!-- Part dc11_a01_idler_ref_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_ref_1" material="dc11_a01_idler_ref_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_ref_1" material="dc11_a01_idler_ref_1_material"/>
+            <!-- Part dc11_a01_idler_screw_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_screw_1" material="dc11_a01_idler_screw_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_screw_1" material="dc11_a01_idler_screw_1_material"/>
+            <!-- Part dc14_a01_insert_2_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_1" material="dc14_a01_insert_2_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_1" material="dc14_a01_insert_2_1_material"/>
+            <!-- Part dc14_a01_insert_2_4_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_4" material="dc14_a01_insert_2_4_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_4" material="dc14_a01_insert_2_4_material"/>
+            <!-- Part phs_m2x33_tap_k_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k_1" material="phs_m2x33_tap_k_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k_1" material="phs_m2x33_tap_k_1_material"/>
+            <!-- Part dc11_a01_idler_cap_ref_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_cap_ref" material="dc11_a01_idler_cap_ref_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_cap_ref" material="dc11_a01_idler_cap_ref_material"/>
+            <!-- Part dc14_a01_ref_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_ref" material="dc14_a01_ref_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_ref" material="dc14_a01_ref_material"/>
+            <!-- Part dc11_a01_horn_ref_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_horn_ref_1" material="dc11_a01_horn_ref_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_horn_ref_1" material="dc11_a01_horn_ref_1_material"/>
+            <!-- Part dc14_a01_insert_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_1" material="dc14_a01_insert_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_1" material="dc14_a01_insert_1_material"/>
+            <!-- Part dc14_a01_insert_2_3_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_3" material="dc14_a01_insert_2_3_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_3" material="dc14_a01_insert_2_3_material"/>
+            <!-- Part dc11_a01_idler_screw_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_screw" material="dc11_a01_idler_screw_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_idler_screw" material="dc11_a01_idler_screw_material"/>
+            <!-- Part dc14_a01_insert_2_7_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_7" material="dc14_a01_insert_2_7_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_7" material="dc14_a01_insert_2_7_material"/>
+            <!-- Part dc14_a01_insert_2_6_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_6" material="dc14_a01_insert_2_6_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_2_6" material="dc14_a01_insert_2_6_material"/>
+            <!-- Part dc11_a01_horn_ref_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_horn_ref" material="dc11_a01_horn_ref_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc11_a01_horn_ref" material="dc11_a01_horn_ref_material"/>
+            <!-- Part ehr_3_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="ehr_3" material="ehr_3_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="ehr_3" material="ehr_3_material"/>
+            <!-- Part dc14_a01_insert_1_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_1_1" material="dc14_a01_insert_1_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="dc14_a01_insert_1_1" material="dc14_a01_insert_1_1_material"/>
+            <!-- Link slide_foot -->
+            <body name="slide_foot" pos="-0.0243 -0.0875 -0.0305" quat="0.5 -0.5 0.5 0.5">
+              <!-- Joint from shell_motor_4 to slide_foot -->
+              <joint name="12_leg4_pri" type="slide" range="-0.017000000000003325 0.015999999999996677"/>
+              <inertial pos="-0.00263783 -0.0242937 0.0864998" mass="0.0826415" fullinertia="0.000724845 0.000693048 4.22232e-05 -7.09083e-09 1.1506e-10 -4.2586e-11"/>
+              <!-- Part mgn7c_1 -->
+              <geom type="mesh" class="visual" pos="-0.0035 -0.0453 0.182" quat="0 1 0 0" mesh="mgn7c_1" material="mgn7c_1_material"/>
+              <geom type="mesh" class="collision" pos="-0.0035 -0.0453 0.182" quat="0 1 0 0" mesh="mgn7c_1" material="mgn7c_1_material"/>
+              <!-- Part footplate_hybrid -->
+              <geom type="mesh" class="visual" pos="0.0225 -0.0243 0.0865" quat="0.5 -0.5 -0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+              <geom type="mesh" class="collision" pos="0.0225 -0.0243 0.0865" quat="0.5 -0.5 -0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+              <!-- Part mgn7c_1_2 -->
+              <geom type="mesh" class="visual" pos="-0.0035 -0.0033 0.182" quat="1.61686e-16 -0 1 -2.90135e-16" mesh="mgn7c_1" material="mgn7c_1_material"/>
+              <geom type="mesh" class="collision" pos="-0.0035 -0.0033 0.182" quat="1.61686e-16 -0 1 -2.90135e-16" mesh="mgn7c_1" material="mgn7c_1_material"/>
+              <!-- Part slide -->
+              <geom type="mesh" class="visual" pos="0.0165 -0.0503 0.0865" quat="0.5 -0.5 0.5 0.5" mesh="slide" material="slide_material"/>
+              <geom type="mesh" class="collision" pos="0.0165 -0.0503 0.0865" quat="0.5 -0.5 0.5 0.5" mesh="slide" material="slide_material"/>
+              <!-- Part footplate_hybrid_2 -->
+              <geom type="mesh" class="visual" pos="-0.0295 -0.0243 0.0865" quat="0.5 0.5 0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+              <geom type="mesh" class="collision" pos="-0.0295 -0.0243 0.0865" quat="0.5 0.5 0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+              <!-- Part mgn7c_1_3 -->
+              <geom type="mesh" class="visual" pos="-0.0035 -0.0033 -0.009" quat="1 0 0 -8.07794e-28" mesh="mgn7c_1" material="mgn7c_1_material"/>
+              <geom type="mesh" class="collision" pos="-0.0035 -0.0033 -0.009" quat="1 0 0 -8.07794e-28" mesh="mgn7c_1" material="mgn7c_1_material"/>
+              <!-- Part mgn7c_1_4 -->
+              <geom type="mesh" class="visual" pos="-0.0035 -0.0453 -0.009" quat="2.42676e-16 -0 2.22045e-16 1" mesh="mgn7c_1" material="mgn7c_1_material"/>
+              <geom type="mesh" class="collision" pos="-0.0035 -0.0453 -0.009" quat="2.42676e-16 -0 2.22045e-16 1" mesh="mgn7c_1" material="mgn7c_1_material"/>
+            </body>
+          </body>
+          <!-- Link slide_foot_2 -->
+          <body name="slide_foot_2" pos="-0.0243 -0.0875 -0.028" quat="0.5 -0.5 0.5 0.5">
+            <!-- Joint from shell_motor_3 to slide_foot_2 -->
+            <joint name="10_leg3_pri" type="slide" range="-0.01699999999999977 0.016000000000000233"/>
+            <inertial pos="-0.00263783 -0.0242937 0.0864998" mass="0.0826415" fullinertia="0.000724845 0.000693048 4.22232e-05 -7.09083e-09 1.1506e-10 -4.2586e-11"/>
+            <!-- Part mgn7c_1_5 -->
+            <geom type="mesh" class="visual" pos="-0.0035 -0.0453 0.182" quat="1.31931e-16 -1 -2.28302e-16 6.51603e-16" mesh="mgn7c_1" material="mgn7c_1_material"/>
+            <geom type="mesh" class="collision" pos="-0.0035 -0.0453 0.182" quat="1.31931e-16 -1 -2.28302e-16 6.51603e-16" mesh="mgn7c_1" material="mgn7c_1_material"/>
+            <!-- Part footplate_hybrid_3 -->
+            <geom type="mesh" class="visual" pos="0.0225 -0.0243 0.0865" quat="0.5 -0.5 -0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+            <geom type="mesh" class="collision" pos="0.0225 -0.0243 0.0865" quat="0.5 -0.5 -0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+            <!-- Part mgn7c_1_6 -->
+            <geom type="mesh" class="visual" pos="-0.0035 -0.0033 0.182" quat="1.64303e-16 2.28302e-16 -1 -1.15943e-16" mesh="mgn7c_1" material="mgn7c_1_material"/>
+            <geom type="mesh" class="collision" pos="-0.0035 -0.0033 0.182" quat="1.64303e-16 2.28302e-16 -1 -1.15943e-16" mesh="mgn7c_1" material="mgn7c_1_material"/>
+            <!-- Part slide_2 -->
+            <geom type="mesh" class="visual" pos="0.0165 -0.0503 0.0865" quat="0.5 -0.5 0.5 0.5" mesh="slide" material="slide_material"/>
+            <geom type="mesh" class="collision" pos="0.0165 -0.0503 0.0865" quat="0.5 -0.5 0.5 0.5" mesh="slide" material="slide_material"/>
+            <!-- Part footplate_hybrid_4 -->
+            <geom type="mesh" class="visual" pos="-0.0295 -0.0243 0.0865" quat="0.5 0.5 0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+            <geom type="mesh" class="collision" pos="-0.0295 -0.0243 0.0865" quat="0.5 0.5 0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+            <!-- Part mgn7c_1_7 -->
+            <geom type="mesh" class="visual" pos="-0.0035 -0.0033 -0.009" quat="1 -0 -0 -7.16917e-27" mesh="mgn7c_1" material="mgn7c_1_material"/>
+            <geom type="mesh" class="collision" pos="-0.0035 -0.0033 -0.009" quat="1 -0 -0 -7.16917e-27" mesh="mgn7c_1" material="mgn7c_1_material"/>
+            <!-- Part mgn7c_1_8 -->
+            <geom type="mesh" class="visual" pos="-0.0035 -0.0453 -0.009" quat="2.237e-16 -1.05471e-15 4.44089e-16 -1" mesh="mgn7c_1" material="mgn7c_1_material"/>
+            <geom type="mesh" class="collision" pos="-0.0035 -0.0453 -0.009" quat="2.237e-16 -1.05471e-15 4.44089e-16 -1" mesh="mgn7c_1" material="mgn7c_1_material"/>
+          </body>
+        </body>
+        <!-- Link slide_foot_3 -->
+        <body name="slide_foot_3" pos="-0.0243 -0.0585 -0.022" quat="0.5 -0.5 0.5 0.5">
+          <!-- Joint from shell_motor_2 to slide_foot_3 -->
+          <joint name="8_leg2_pri" type="slide" range="-0.012999999999999824 0.019500000000000177"/>
+          <inertial pos="0.00436217 -0.0242937 0.0574998" mass="0.0826415" fullinertia="0.000724845 0.000693048 4.22232e-05 -7.09083e-09 1.1506e-10 -4.2586e-11"/>
+          <!-- Part mgn7c_1_9 -->
+          <geom type="mesh" class="visual" pos="0.0035 -0.0453 0.153" quat="8.19112e-17 1 -3.46945e-18 -1.73472e-17" mesh="mgn7c_1" material="mgn7c_1_material"/>
+          <geom type="mesh" class="collision" pos="0.0035 -0.0453 0.153" quat="8.19112e-17 1 -3.46945e-18 -1.73472e-17" mesh="mgn7c_1" material="mgn7c_1_material"/>
+          <!-- Part footplate_hybrid_5 -->
+          <geom type="mesh" class="visual" pos="0.0295 -0.0243 0.0575" quat="0.5 -0.5 -0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+          <geom type="mesh" class="collision" pos="0.0295 -0.0243 0.0575" quat="0.5 -0.5 -0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+          <!-- Part mgn7c_1_10 -->
+          <geom type="mesh" class="visual" pos="0.0035 -0.0033 0.153" quat="1.75343e-16 6.93889e-18 -1 4.42432e-17" mesh="mgn7c_1" material="mgn7c_1_material"/>
+          <geom type="mesh" class="collision" pos="0.0035 -0.0033 0.153" quat="1.75343e-16 6.93889e-18 -1 4.42432e-17" mesh="mgn7c_1" material="mgn7c_1_material"/>
+          <!-- Part slide_3 -->
+          <geom type="mesh" class="visual" pos="0.0235 -0.0503 0.0575" quat="0.5 -0.5 0.5 0.5" mesh="slide" material="slide_material"/>
+          <geom type="mesh" class="collision" pos="0.0235 -0.0503 0.0575" quat="0.5 -0.5 0.5 0.5" mesh="slide" material="slide_material"/>
+          <!-- Part footplate_hybrid_6 -->
+          <geom type="mesh" class="visual" pos="-0.0225 -0.0243 0.0575" quat="0.5 0.5 0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+          <geom type="mesh" class="collision" pos="-0.0225 -0.0243 0.0575" quat="0.5 0.5 0.5 0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+          <!-- Part mgn7c_1_11 -->
+          <geom type="mesh" class="visual" pos="0.0035 -0.0033 -0.038" quat="1 0 0 -4.03897e-26" mesh="mgn7c_1" material="mgn7c_1_material"/>
+          <geom type="mesh" class="collision" pos="0.0035 -0.0033 -0.038" quat="1 0 0 -4.03897e-26" mesh="mgn7c_1" material="mgn7c_1_material"/>
+          <!-- Part mgn7c_1_12 -->
+          <geom type="mesh" class="visual" pos="0.0035 -0.0453 -0.038" quat="9.41786e-18 2.13371e-16 -2.22045e-16 1" mesh="mgn7c_1" material="mgn7c_1_material"/>
+          <geom type="mesh" class="collision" pos="0.0035 -0.0453 -0.038" quat="9.41786e-18 2.13371e-16 -2.22045e-16 1" mesh="mgn7c_1" material="mgn7c_1_material"/>
+        </body>
+      </body>
+      <!-- Link slide_foot_4 -->
+      <body name="slide_foot_4" pos="-0.0763992 -0.0153526 0.0881486" quat="1.84071e-14 -2.92708e-12 0.999993 -0.00366011">
+        <!-- Joint from shell_motor to slide_foot_4 -->
+        <joint name="6_leg1_pri" type="slide" range="-0.016999999999999838 0.016000000000000163"/>
+        <inertial pos="0.00263783 -0.0243063 0.0864998" mass="0.0826415" fullinertia="0.000724845 0.000693048 4.22232e-05 -7.09083e-09 -1.1506e-10 4.2586e-11"/>
+        <!-- Part mgn7c_1_13 -->
+        <geom type="mesh" class="visual" pos="0.0035 -0.0033 0.182" quat="1.23871e-15 5.87799e-16 -1 -1.66838e-16" mesh="mgn7c_1" material="mgn7c_1_material"/>
+        <geom type="mesh" class="collision" pos="0.0035 -0.0033 0.182" quat="1.23871e-15 5.87799e-16 -1 -1.66838e-16" mesh="mgn7c_1" material="mgn7c_1_material"/>
+        <!-- Part footplate_hybrid_7 -->
+        <geom type="mesh" class="visual" pos="-0.0225 -0.0243 0.0865" quat="0.5 -0.5 0.5 -0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+        <geom type="mesh" class="collision" pos="-0.0225 -0.0243 0.0865" quat="0.5 -0.5 0.5 -0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+        <!-- Part mgn7c_1_14 -->
+        <geom type="mesh" class="visual" pos="0.0035 -0.0453 0.182" quat="4.23297e-17 -1 -2.12202e-26 1.04083e-15" mesh="mgn7c_1" material="mgn7c_1_material"/>
+        <geom type="mesh" class="collision" pos="0.0035 -0.0453 0.182" quat="4.23297e-17 -1 -2.12202e-26 1.04083e-15" mesh="mgn7c_1" material="mgn7c_1_material"/>
+        <!-- Part slide_4 -->
+        <geom type="mesh" class="visual" pos="-0.0165 0.0017 0.0865" quat="0.5 0.5 0.5 -0.5" mesh="slide" material="slide_material"/>
+        <geom type="mesh" class="collision" pos="-0.0165 0.0017 0.0865" quat="0.5 0.5 0.5 -0.5" mesh="slide" material="slide_material"/>
+        <!-- Part footplate_hybrid_8 -->
+        <geom type="mesh" class="visual" pos="0.0295 -0.0243 0.0865" quat="0.5 0.5 -0.5 -0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+        <geom type="mesh" class="collision" pos="0.0295 -0.0243 0.0865" quat="0.5 0.5 -0.5 -0.5" mesh="footplate_hybrid" material="footplate_hybrid_material"/>
+        <!-- Part mgn7c_1_15 -->
+        <geom type="mesh" class="visual" pos="0.0035 -0.0453 -0.009" quat="9.75854e-16 -9.18782e-16 2.22045e-16 -1" mesh="mgn7c_1" material="mgn7c_1_material"/>
+        <geom type="mesh" class="collision" pos="0.0035 -0.0453 -0.009" quat="9.75854e-16 -9.18782e-16 2.22045e-16 -1" mesh="mgn7c_1" material="mgn7c_1_material"/>
+        <!-- Part mgn7c_1_16 -->
+        <geom type="mesh" class="visual" pos="0.0035 -0.0033 -0.009" quat="1 0 0 -4.23284e-25" mesh="mgn7c_1" material="mgn7c_1_material"/>
+        <geom type="mesh" class="collision" pos="0.0035 -0.0033 -0.009" quat="1 0 0 -4.23284e-25" mesh="mgn7c_1" material="mgn7c_1_material"/>
+      </body>
+    </body>
+  </worldbody>
+  <asset>
+    <mesh file="shell.stl"/>
+    <mesh file="spacer_ring.stl"/>
+    <mesh file="dc14_a01_ref.stl"/>
+    <mesh file="dc11_a01_idler_screw.stl"/>
+    <mesh file="phs_m2x33_tap_k_2.stl"/>
+    <mesh file="dc14_a01_insert_2_5.stl"/>
+    <mesh file="dc14_a01_insert_2_6.stl"/>
+    <mesh file="dc14_a01_insert_2_1.stl"/>
+    <mesh file="phs_m2x33_tap_k_1.stl"/>
+    <mesh file="mgn7c_1.stl"/>
+    <mesh file="fhs_m2_5x06_nylok_1.stl"/>
+    <mesh file="dc11_a01_idler_ref_1.stl"/>
+    <mesh file="dc11_a01_idler_screw_1.stl"/>
+    <mesh file="dc11_a01_idler_cap_ref_1.stl"/>
+    <mesh file="s3b_eh.stl"/>
+    <mesh file="fhs_m2_5x06_nylok.stl"/>
+    <mesh file="dc14_a01_insert_2_2.stl"/>
+    <mesh file="dc11_a01_horn_ref_1.stl"/>
+    <mesh file="ehr_3.stl"/>
+    <mesh file="mgn7c_1_bearing.stl"/>
+    <mesh file="dc14_a01_insert_2_7.stl"/>
+    <mesh file="dc11_a01_idler_ref.stl"/>
+    <mesh file="gear.stl"/>
+    <mesh file="s3b_eh_1.stl"/>
+    <mesh file="footplate_hybrid.stl"/>
+    <mesh file="dc11_a01_idler_cap_ref.stl"/>
+    <mesh file="dc14_a01_insert_1.stl"/>
+    <mesh file="slide.stl"/>
+    <mesh file="phs_m2x33_tap_k.stl"/>
+    <mesh file="dc14_a01_insert_2.stl"/>
+    <mesh file="ehr_3_1.stl"/>
+    <mesh file="dc14_a01_insert_2_3.stl"/>
+    <mesh file="dc14_a01_insert_1_1.stl"/>
+    <mesh file="dc14_a01_insert_2_4.stl"/>
+    <mesh file="dc11_a01_horn_ref.stl"/>
+    <mesh file="phs_m2x33_tap_k_3.stl"/>
+    <material name="mgn7c_1_bearing_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="spacer_ring_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="shell_material" rgba="0.623529 0.666667 0.701961 1"/>
+    <material name="dc11_a01_idler_ref_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="phs_m2x33_tap_k_3_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="fhs_m2_5x06_nylok_1_material" rgba="0.498039 0.498039 0.498039 1"/>
+    <material name="fhs_m2_5x06_nylok_material" rgba="0.917647 0.917647 0.917647 1"/>
+    <material name="ehr_3_1_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="gear_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="s3b_eh_1_material" rgba="0.917647 0.917647 0.917647 1"/>
+    <material name="phs_m2x33_tap_k_2_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="s3b_eh_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="phs_m2x33_tap_k_material" rgba="0.498039 0.498039 0.498039 1"/>
+    <material name="dc14_a01_insert_2_material" rgba="0.498039 0.498039 0.498039 1"/>
+    <material name="dc14_a01_insert_2_5_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="dc14_a01_insert_2_2_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="dc11_a01_idler_cap_ref_1_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="dc11_a01_idler_ref_1_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="dc11_a01_idler_screw_1_material" rgba="0.498039 0.498039 0.498039 1"/>
+    <material name="dc14_a01_insert_2_1_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="dc14_a01_insert_2_4_material" rgba="0.498039 0.498039 0.498039 1"/>
+    <material name="phs_m2x33_tap_k_1_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="dc11_a01_idler_cap_ref_material" rgba="0.647059 0.647059 0.647059 1"/>
+    <material name="dc14_a01_ref_material" rgba="0.647059 0.647059 0.647059 1"/>
+    <material name="dc11_a01_horn_ref_1_material" rgba="0.972549 0.529412 0.00392157 1"/>
+    <material name="dc14_a01_insert_1_material" rgba="0.498039 0.498039 0.498039 1"/>
+    <material name="dc14_a01_insert_2_3_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="dc11_a01_idler_screw_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="dc14_a01_insert_2_7_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="dc14_a01_insert_2_6_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="dc11_a01_horn_ref_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="ehr_3_material" rgba="0.768627 0.886275 0.952941 1"/>
+    <material name="dc14_a01_insert_1_1_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="mgn7c_1_material" rgba="0.647059 0.647059 0.647059 1"/>
+    <material name="footplate_hybrid_material" rgba="0.623529 0.666667 0.701961 1"/>
+    <material name="slide_material" rgba="0.647059 0.647059 0.647059 1"/>
+  </asset>
+  <actuator>
+    <position class="TARS3D" name="7_leg_1_rot" joint="7_leg_1_rot" inheritrange="1"/>
+    <position class="TARS3D" name="9_leg2_rot" joint="9_leg2_rot" inheritrange="1"/>
+    <position class="TARS3D" name="11_leg3_rot" joint="11_leg3_rot" inheritrange="1"/>
+    <position class="TARS3D_prismatic" name="12_leg4_pri" joint="12_leg4_pri" inheritrange="1"/>
+    <position class="TARS3D_prismatic" name="10_leg3_pri" joint="10_leg3_pri" inheritrange="1"/>
+    <position class="TARS3D_prismatic" name="8_leg2_pri" joint="8_leg2_pri" inheritrange="1"/>
+    <position class="TARS3D_prismatic" name="6_leg1_pri" joint="6_leg1_pri" inheritrange="1"/>
+  </actuator>
+  <equality/>
+</mujoco>
