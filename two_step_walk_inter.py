@@ -16,32 +16,21 @@ data = mujoco.MjData(model)
 #  Dynamixel-like Position Data
 # ----------------------------------------------------------------------
 HOME_POSITIONS = {
-    # 5: 2048,  # (Only relevant if you have an actuator for motor 5)
+    5: 2048,  # (Only relevant if you have an actuator for motor 5)
     6: 2975,
-    7: 3072,
+    7: 2048,
     8: 2975,
-    9: 1536,
+    9: 2048,
     10: 2975,
-    11: 3072,
-    12: 2975
+    11: 2048,
+    12: 2975,
 }
 
-# HOME_POSITIONS = {5: 2048, 6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2500}
-
-GAIT_POSITIONS = {
-    "step1": {6: 2975, 7: 3072, 8: 3750, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step2": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 3750},
-    "step3": {6: 3750, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step4": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 3750, 11: 3072, 12: 2975},
-    "step5": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step6": {6: 2975, 7: 3072, 8: 2200, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step7": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2200},
-    "step8": {6: 2200, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step9": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2200, 11: 3072, 12: 2975},
-    # "step10": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-
-}
-
+GAIT_POSITIONS = [
+    {6: 2725, 8: 3225, 10: 3225, 12: 2725, 7: 2108, 11: 1988},
+    {6: 2975, 8: 2575, 10: 2575, 12: 2975, 7: 2048, 11: 2048},
+    {6: 3225, 8: 2725, 10: 2725, 12: 3225, 7: 1988, 11: 2108},
+]
 
 # GAIT_POSITIONS = [
 #     {8: 3375, 10: 3375, 7: 2048, 11: 2048},
@@ -70,7 +59,7 @@ def dxl_to_radians(dxl_pos):
     Convert [0..4095] ticks into radians, with 2048 = 0 rad.
     """
     EXTRA_SCALE = 2
-    return (dxl_pos - 2048) * (2.0 * np.pi / 4096.0)
+    return (dxl_pos - 2048) * (2.0 * np.pi / 4096.0) * EXTRA_SCALE
 
 
 def dxl_to_meters(dxl_pos, motor_id):
@@ -161,22 +150,13 @@ with mujoco.viewer.launch_passive(model, data) as viewer:
     # Optionally move from "HOME" to "HOME" to initialize
     move_motors_interpolated(HOME_POSITIONS, HOME_POSITIONS)
     current_positions = HOME_POSITIONS.copy()
-    time.sleep(2)
-    # input("Press Enter to continue...")
-
 
     while viewer.is_running():
-        # move_motors_interpolated(HOME_POSITIONS, HOME_POSITIONS)
-
         # Cycle through GAIT_POSITIONS
-        for gait_key in GAIT_POSITIONS:
-            gait_positions = GAIT_POSITIONS[gait_key]
+        for gait in GAIT_POSITIONS:
+            # move_motors_interpolated(HOME_POSITIONS, HOME_POSITIONS)
             move_motors_interpolated(
-                current_positions, gait_positions, steps=2, sim_steps_per_step=85
+                current_positions, gait, steps=10, sim_steps_per_step=50
             )
-            # time.sleep(1)
-        # input("Press Enter to continue...")
-
-        current_positions = gait_positions.copy()
-
+            current_positions = gait.copy()
         # Repeat...

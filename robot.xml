@@ -5,9 +5,8 @@
   <compiler angle="radian" meshdir="assets" autolimits="true"/>
   <default>
     <default class="TARS3D">
-      <joint frictionloss="0.1" armature="0.005"/>
-      <position kp="50" dampratio="1"/>
-      <prismatic_position kp="500000000000" dampratio="1"/>
+      <joint frictionloss="0.0" armature="0.005"/>
+      <position kp="50" dampratio="2"/>
       <default class="visual">
         <geom type="mesh" contype="0" conaffinity="0" group="2"/>
       </default>
@@ -15,8 +14,13 @@
         <geom group="3"/>
       </default>
     </default>
+    <default class="TARS3D_prismatic">
+      <joint frictionloss="0.0" armature="0.005"/>
+      <position kp="1000" dampratio="0.8"/>
+    </default>
   </default>
   <worldbody>
+
     <!-- Link shell_motor -->
     <body name="shell_motor" pos="0 0 0" quat="1 0 0 0" childclass="TARS3D">
       <freejoint name="shell_motor_freejoint"/>
@@ -393,7 +397,10 @@
             <!-- Part phs_m2x33_tap_k_3_4 -->
             <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
             <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="phs_m2x33_tap_k_3" material="phs_m2x33_tap_k_3_material"/>
-            <!-- Part fhs_m2_5x06_nylok_1_4 -->      <prismatic_position kp="50000" dampratio="10"/>
+            <!-- Part fhs_m2_5x06_nylok_1_4 -->
+            <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+            <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="fhs_m2_5x06_nylok_1" material="fhs_m2_5x06_nylok_1_material"/>
+            <!-- Part fhs_m2_5x06_nylok_4 -->
             <geom type="mesh" class="visual" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
             <geom type="mesh" class="collision" pos="-5.96745e-16 0.012 -0.022" quat="2.39356e-16 0 4.44089e-16 -1" mesh="fhs_m2_5x06_nylok" material="fhs_m2_5x06_nylok_material"/>
             <!-- Part ehr_3_1_4 -->
@@ -536,7 +543,7 @@
         <!-- Link slide_foot_3 -->
         <body name="slide_foot_3" pos="-0.0243 -0.0585 -0.022" quat="0.5 -0.5 0.5 0.5">
           <!-- Joint from shell_motor_2 to slide_foot_3 -->
-          <joint name="8_leg2_pri" type="slide" range="-0.012999999999999824 0.019500000000000177"/>
+          <joint name="8_leg2_pri" type="slide" range="-0.01699999999999977 0.016000000000000233"/>
           <inertial pos="0.00436217 -0.0242937 0.0574998" mass="0.0826415" fullinertia="0.000724845 0.000693048 4.22232e-05 -7.09083e-09 1.1506e-10 -4.2586e-11"/>
           <!-- Part mgn7c_1_9 -->
           <geom type="mesh" class="visual" pos="0.0035 -0.0453 0.153" quat="8.19112e-17 1 -3.46945e-18 -1.73472e-17" mesh="mgn7c_1" material="mgn7c_1_material"/>
@@ -668,10 +675,10 @@
     <position class="TARS3D" name="7_leg_1_rot" joint="7_leg_1_rot" inheritrange="1"/>
     <position class="TARS3D" name="9_leg2_rot" joint="9_leg2_rot" inheritrange="1"/>
     <position class="TARS3D" name="11_leg3_rot" joint="11_leg3_rot" inheritrange="1"/>
-    <prismatic_position class="TARS3D" name="12_leg4_pri" joint="12_leg4_pri" inheritrange="1"/>
-    <prismatic_position class="TARS3D" name="10_leg3_pri" joint="10_leg3_pri" inheritrange="1"/>
-    <prismatic_position class="TARS3D" name="8_leg2_pri" joint="8_leg2_pri" inheritrange="1"/>
-    <prismatic_position class="TARS3D" name="6_leg1_pri" joint="6_leg1_pri" inheritrange="1"/>
+    <position class="TARS3D_prismatic" name="12_leg4_pri" joint="12_leg4_pri" inheritrange="1"/>
+    <position class="TARS3D_prismatic" name="10_leg3_pri" joint="10_leg3_pri" inheritrange="1"/>
+    <position class="TARS3D_prismatic" name="8_leg2_pri" joint="8_leg2_pri" inheritrange="1"/>
+    <position class="TARS3D_prismatic" name="6_leg1_pri" joint="6_leg1_pri" inheritrange="1"/>
   </actuator>
   <equality/>
 </mujoco>

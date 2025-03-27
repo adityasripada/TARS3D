@@ -20,26 +20,51 @@ HOME_POSITIONS = {
     6: 2975,
     7: 3072,
     8: 2975,
-    9: 1536,
+    9: 3072,
     10: 2975,
     11: 3072,
     12: 2975
 }
 
 # HOME_POSITIONS = {5: 2048, 6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2500}
-
+leg_extension = 3750
+leg_flexion = 2200
+leg_home = 2975
+leg_rotation_forward = 3072
+leg_rotation_backward = 2048
 GAIT_POSITIONS = {
-    "step1": {6: 2975, 7: 3072, 8: 3750, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step2": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 3750},
-    "step3": {6: 3750, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step4": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 3750, 11: 3072, 12: 2975},
-    "step5": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step6": {6: 2975, 7: 3072, 8: 2200, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step7": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2200},
-    "step8": {6: 2200, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
-    "step9": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2200, 11: 3072, 12: 2975},
-    # "step10": {6: 2975, 7: 3072, 8: 2975, 9: 1536, 10: 2975, 11: 3072, 12: 2975},
+    # step #1
+    # Starts with 10, 12 in contact with the ground
+    "step1": {6: 2975, 7: 3072, 8: 2975, 9: 3072, 10: 2200, 11: 3072, 12: 3750}, # 10 contracts and 12 extends, shifting weight to one side
+    "step2_rot": {6: 2975, 7: 3072, 8: 2975, 9: 2048, 10: 2200, 11: 3072, 12: 3750}, # 9 rotates backward
+    "step2_move": {6: 2975, 7: 3072, 8: 2975, 9: 2048, 10: 2200, 11: 3072, 12: 2200}, # 12 contracts
+    "step4": {6: 3750, 7: 3072, 8: 2200, 9: 2048, 10: 2975, 11: 3072, 12: 2975}, # 6 extends and 8 contracts, shifting weight to other side
+    "step5_rot": {6: 3750, 7: 3072, 8: 2200, 9: 3072, 10: 2975, 11: 3072, 12: 2975}, # 9 rotates forward
+    "step5_move": {6: 2200, 7: 3072, 8: 2200, 9: 3072, 10: 2975, 11: 3072, 12: 2975}, # 6 contracts
 
+    # Starts with 10, 12 in contact with the ground
+    "step7": {6: 2975, 7: 3072, 8: 2975, 9: 3072, 10: 2200, 11: 3072, 12: 2200}, # 10 contracts and 12 extends, shifting weight to one side
+    "step8_rot": {6: 2975, 7: 3072, 8: 2975, 9: 2048, 10: 2200, 11: 3072, 12: 2200}, # 9 rotates backward
+    "step8_move": {6: 2975, 7: 3072, 8: 2975, 9: 2048, 10: 3750, 11: 3072, 12: 3750}, # 10 and 12 extend
+    "step10": {6: 3750, 7: 3072, 8: 3750, 9: 2048, 10: 2975, 11: 3072, 12: 2975}, # 6 extends and 8 contracts, shifting weight to other side
+    "step11_rot": {6: 3750, 7: 3072, 8: 3750, 9: 3072, 10: 2975, 11: 3072, 12: 2975}, # 9 rotates forward
+    "step11_move": {6: 2200, 7: 3072, 8: 3750, 9: 3072, 10: 2975, 11: 3072, 12: 2975}, # 6 contracts
+
+    # Starts with 10, 12 in contact with the ground
+    "step13": {6: 2975, 7: 3072, 8: 2975, 9: 3072, 10: 3750, 11: 3072, 12: 2200}, # 10 extends and 12 contracts
+    "step14_rot": {6: 2975, 7: 3072, 8: 2975, 9: 2048, 10: 3750, 11: 3072, 12: 2200}, # 9 rotates backward
+    "step14_move": {6: 2975, 7: 3072, 8: 2975, 9: 2048, 10: 3750, 11: 3072, 12: 3750}, # 12 extends
+    "step16": {6: 2200, 7: 3072, 8: 3750, 9: 2048, 10: 2975, 11: 3072, 12: 2975}, # 6 contracts and 8 extends
+    "step17_rot": {6: 2200, 7: 3072, 8: 3750, 9: 3072, 10: 2975, 11: 3072, 12: 2975}, # 9 rotates forward
+    "step17_move": {6: 3750, 7: 3072, 8: 3750, 9: 3072, 10: 2975, 11: 3072, 12: 2975}, # 6 extends
+
+    # Starts with 10, 12 in contact with the ground
+    "step19": {6: 2975, 7: 3072, 8: 2975, 9: 3072, 10: 3750, 11: 3072, 12: 3750}, # 10 and 12 extend
+    "step20_rot": {6: 2975, 7: 3072, 8: 2975, 9: 2048, 10: 3750, 11: 3072, 12: 3750}, # 9 rotates backward
+    "step20_move": {6: 2975, 7: 3072, 8: 2975, 9: 2048, 10: 2200, 11: 3072, 12: 2200}, # 10 and 12 contract
+    "step22": {6: 2200, 7: 3072, 8: 2200, 9: 2048, 10: 2975, 11: 3072, 12: 2975}, # 6 and 8 contract
+    "step23_rot": {6: 2200, 7: 3072, 8: 2200, 9: 3072, 10: 2975, 11: 3072, 12: 2975}, # 9 rotates forward
+    "step23_move": {6: 3750, 7: 3072, 8: 2200, 9: 3072, 10: 2975, 11: 3072, 12: 2975}, # 6 extends
 }
 
 
@@ -53,7 +78,7 @@ GAIT_POSITIONS = {
 #  Map Dynamixel IDs to MuJoCo Actuators & Convert Angles
 # ----------------------------------------------------------------------
 # Make sure the joint names in scene.xml exactly match these references
-actuator_map = {
+actuator_map = {#
     7: 0,  # "7_leg_1_rot"
     9: 1,  # "9_leg2_rot"
     11: 2,  # "11_leg3_rot"
@@ -78,12 +103,12 @@ def dxl_to_meters(dxl_pos, motor_id):
     Convert Dynamixel positions to meters for prismatic joints.
     Each motor has a different mapping according to the maximum stroke.
     """
-    if motor_id in [6, 10, 12]:
+    # if motor_id in [6, 10, 12]:
         # Stroke: -17mm to 16mm, Dynamixel positions from 2175 to 3775
-        return (dxl_pos - 2975) * (33 / 1600.0) / 1000  # convert mm to meters
-    elif motor_id == 8:
-        # Stroke: -13.5mm to 19.5mm, Dynamixel positions from 2175 to 3775
-        return 0.003 + ((dxl_pos - 2975) * (33 / 1600.0)) / 1000  # convert mm to meters
+    return (dxl_pos - 2975) * (33 / 1600.0) / 1000  # convert mm to meters
+    # elif motor_id == 8:
+    #     # Stroke: -13.5mm to 19.5mm, Dynamixel positions from 2175 to 3775
+    #     return 0.004 + ((dxl_pos - 2975) * (33 / 1600.0)) / 1000  # convert mm to meters
 
 
 # Global storage for the last known positions of each actuator
@@ -107,7 +132,7 @@ def set_mujoco_actuators_positions(position_dict):
             ctrl_index = actuator_map[motor_id]
             if motor_id in [6, 8, 10, 12]:  # Prismatic actuators
                 data.ctrl[ctrl_index] = dxl_to_meters(dxl_pos, motor_id)
-                print("motor", motor_id, ":", dxl_to_meters(dxl_pos, motor_id))
+                # print("motor", motor_id, ":", dxl_to_meters(dxl_pos, motor_id))
             else:  # Rotational actuators
                 data.ctrl[ctrl_index] = dxl_to_radians(dxl_pos)
 
@@ -126,7 +151,7 @@ def move_motors_interpolated(
         interpolated_positions = interpolate_positions(
             start_positions, end_positions, alpha
         )
-        print("Interpolated positions for step", step_i, ":", interpolated_positions)
+        # print("Interpolated positions for step", step_i, ":", interpolated_positions)
         set_mujoco_actuators_positions(interpolated_positions)
 
         # Advance the simulation enough steps so it visibly transitions
@@ -162,21 +187,30 @@ with mujoco.viewer.launch_passive(model, data) as viewer:
     move_motors_interpolated(HOME_POSITIONS, HOME_POSITIONS)
     current_positions = HOME_POSITIONS.copy()
     time.sleep(2)
-    # input("Press Enter to continue...")
+    input("Press Enter to continue...")
 
 
-    while viewer.is_running():
+    # while viewer.is_running():
         # move_motors_interpolated(HOME_POSITIONS, HOME_POSITIONS)
 
-        # Cycle through GAIT_POSITIONS
-        for gait_key in GAIT_POSITIONS:
-            gait_positions = GAIT_POSITIONS[gait_key]
+    # Cycle through GAIT_POSITIONS
+    for gait_key in GAIT_POSITIONS:
+        print("gait_key", gait_key)
+        gait_positions = GAIT_POSITIONS[gait_key]
+        
+        # Use different parameters based on whether it's a rotation step
+        if "_rot" in gait_key:
             move_motors_interpolated(
-                current_positions, gait_positions, steps=2, sim_steps_per_step=85
+                current_positions, gait_positions, steps=20, sim_steps_per_step=20
             )
-            # time.sleep(1)
-        # input("Press Enter to continue...")
+        else:
+            move_motors_interpolated(
+                current_positions, gait_positions, steps=10, sim_steps_per_step=20
+            )
 
         current_positions = gait_positions.copy()
+    time.sleep(2)
+    
 
-        # Repeat...
+    input("Press Enter to continue...") 
+    # Repeat...
